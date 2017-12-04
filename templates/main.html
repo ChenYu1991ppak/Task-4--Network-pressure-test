@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>{{ page_title }}</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            {% block header %}<h1>Book Store</h1>{% end %}
+        </header>
+        <div id="main">
+            <div id="content">
+                {% block body %}{% end %}
+            </div>
+        </div>
+        <footer>
+            {% block footer %}
+            {% end %}
+        </footer>
+    </div>
+    </body>
+</html>

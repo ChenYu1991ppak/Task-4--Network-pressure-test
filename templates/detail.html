@@ -1,0 +1,14 @@
+{% extends "main.html" %}
+{% autoescape None %}
+
+{% block body %}
+<div class="book">
+    <h3 class="book_title">{{ book["title"] }}</h3>
+    <img src="{{ book["image"] }}" class="book_image"/>
+    <div class="book_details">
+        <div class="book_price">Released: {{ book["price"]}}</div>
+        <h5>Description:</h5>
+        <div class="book_body">{% raw book["detail"] %}</div>
+    </div>
+</div>
+{% end %}

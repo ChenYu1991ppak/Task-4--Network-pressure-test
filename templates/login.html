@@ -1,0 +1,13 @@
+{% extends "main.html" %}
+{% autoescape None %}
+
+{% block body %}
+<form method="POST" action="/index">
+    User <input type="text" name="user" value=""><br>
+    Passwd <input type="text" name="passwd" value=""><br>
+    <input type="submit" value="Login">
+</form>
+<form method="POST" action="/register">
+    <input type="submit" value="Register">
+</form>
+{% end %}
